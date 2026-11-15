@@ -1,5 +1,7 @@
 # Lucy Maria Daly’s bookshelf
 
+Live website: https://ldaly4.github.io/lucy-bookshelf/
+
 A static personal website in plain HTML, CSS, and JavaScript. No backend, dependencies, build command, or framework. This project lives separately from the church app at `/Users/lucy/lucy-bookshelf`.
 
 ## Preview
@@ -46,7 +48,7 @@ Set `shelfPhoto.src` and `shelfPhoto.alt` to put your photo into the upper shelf
 - All asset paths are relative and work in a project subdirectory.
 - A raster social preview is included. Once your domain is known, use its absolute URL for `og:image` and `twitter:image` and add `og:url` and a canonical URL in `index.html`.
 
-Google Fonts are optional; serif, sans-serif, and cursive fallbacks keep the site usable offline. No deployment has been performed.
+Google Fonts are optional; serif, sans-serif, and cursive fallbacks keep the site usable offline. Published with GitHub Pages from the main branch.
 
 `details.css` adds the handwritten name, walnut shelf grain, bronze brackets, frame glass, and subtle stained-glass lighting. Its decorative SVGs total about 3.8 KB, with no additional raster images. The name uses Dancing Script from Google Fonts with a cursive fallback.
 
