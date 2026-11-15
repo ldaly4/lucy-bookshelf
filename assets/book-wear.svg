@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="360" viewBox="0 0 120 360" preserveAspectRatio="none">
+<defs><filter id="cloth"><feTurbulence type="fractalNoise" baseFrequency=".65 .23" numOctaves="3" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope=".2"/></feComponentTransfer></filter><pattern id="weave" width="4" height="4" patternUnits="userSpaceOnUse"><path d="M0 0h4M0 2h4" stroke="#f0d8a5" stroke-width=".35" opacity=".2"/><path d="M0 0v4M2 0v4" stroke="#2f241c" stroke-width=".35" opacity=".17"/></pattern><radialGradient id="wear"><stop stop-color="#e4c596" stop-opacity=".32"/><stop offset="1" stop-color="#e4c596" stop-opacity="0"/></radialGradient></defs>
+<path d="M0 0h120v360H0z" fill="url(#weave)"/><path d="M0 0h120v360H0z" filter="url(#cloth)" opacity=".65"/>
+<ellipse cx="6" cy="7" rx="24" ry="31" fill="url(#wear)"/><ellipse cx="113" cy="350" rx="30" ry="36" fill="url(#wear)"/><ellipse cx="1" cy="210" rx="16" ry="58" fill="url(#wear)"/>
+<g fill="none" stroke="#ebcba0" stroke-linecap="round"><path d="M3 10 4 53m-1 8v31m1 87-1 26m1 74-1 34m2 12-1 29m2 2 22 1m66-1h19l3-8M114 7l-17-1M8 3l26 1m80 14 1 24m1 211-1 26m0 14v30" stroke-width="1.2" opacity=".48"/><path d="m10 36 7-2m88 76 6 2M12 293l5-4m87 43 7-3m-96 22h13M97 14l7 2" stroke-width=".8" opacity=".25"/></g>
+<g stroke="#33251b" stroke-width=".6" opacity=".28"><path d="M8 6v348M111 5v350M11 40l3 3m90 203 4-5M12 308l7 3"/></g>
+</svg>

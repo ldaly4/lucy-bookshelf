@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="34" viewBox="0 0 1000 34" preserveAspectRatio="none">
+<defs><linearGradient id="wood" x2="0" y2="1"><stop stop-color="#b88b5e"/><stop offset=".22" stop-color="#a77b4e"/><stop offset=".7" stop-color="#986b43"/><stop offset="1" stop-color="#7b5336"/></linearGradient><filter id="fibre"><feTurbulence type="fractalNoise" baseFrequency=".012 .45" numOctaves="2" seed="17"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope=".15"/></feComponentTransfer></filter></defs>
+<path d="M0 0h1000v34H0z" fill="url(#wood)"/><path d="M0 0h1000v34H0z" filter="url(#fibre)" opacity=".7"/>
+<g fill="none" stroke="#55371f" stroke-width=".65" opacity=".4">
+<path d="M-20 4Q78 1 162 5T327 5 482 4 617 5 773 3 1020 5M-20 8Q86 5 187 9T359 8 526 10 660 8 791 7 1020 10M-20 12q133-5 257 1t228 0 174-2 181 2 200-1M-20 16q118-5 229 0t224 2 130-3q46-6 77 0t66 2 314-1M-20 21q116-3 229 0t232-2 126 1q48 11 83 1t92-1 278 0M-20 25q119-4 237 1t221-2 194 2 202-1 186 1M-20 30q150-3 282-1t220 0 180 1 186-1 172 2"/>
+<path d="M558 18q29-10 58-2t53 1q-37 11-63 5t-48-4ZM585 18q21-5 40 0-17 5-40 0Z" stroke-width=".8"/><path d="M600 18q8-3 16 0-9 3-16 0Z" fill="#694326" opacity=".8"/>
+<path d="M132 8q17-5 33 0-16 5-33 0ZM140 8q6-2 12 0-6 2-12 0Z" opacity=".7"/>
+</g>
+<g fill="none" stroke="#e1bd86" stroke-width=".55" opacity=".45"><path d="M0 6q88-3 170 1t168-1 207 1 213-1 242 2M0 14q135-4 228 1t222 0 104-1M675 14q109-2 205 1t120-1M0 23q130-2 225 1t222-2 119 1M680 24q130-2 320 0"/></g>
+<path d="M9 2h115m206 0h60m334 0h178" stroke="#f0d2a0" stroke-width=".6" opacity=".4"/>
+</svg>

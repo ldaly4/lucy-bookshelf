@@ -1,0 +1,171 @@
+/* Surface details only. Book, wallpaper, plant, and shelf layout rules stay intact. */
+.site-name {
+  font-family: 'Dancing Script', 'Caveat', cursive;
+  font-weight: 500;
+  font-size: 52px;
+  line-height: 1.15;
+  letter-spacing: .1px;
+  color: #69442e;
+  text-shadow: 0 1px 0 #f5e6ce80;
+}
+.shelf {
+  background-image: linear-gradient(#e9c18a30, transparent 16%, #56331e17 70%, #452c2059), url('assets/walnut-grain.svg');
+  background-size: 100% 100%;
+  border-color: #e4bd8180 #815737 #5e3e28;
+  box-shadow: inset 0 1px 0 #f6dba585, inset 0 -2px 2px #4a2c2040, 0 2px 1px #533825, 2px 9px 12px #513a2830, 5px 21px 27px #513a2824;
+}
+.shelf::before {
+  background-image: linear-gradient(#efd4a470, #e3bc8455 65%, #f8dcaa85 84%, #f9e0b7bb 97%), url('assets/walnut-grain.svg');
+  background-size: 100% 100%;
+}
+.shelf::after {
+  content: '';
+  position: absolute;
+  pointer-events: none;
+  left: 0; right: 0; top: -6px; height: 8px;
+  background: radial-gradient(ellipse 46px 3px at 9% 50%, #3b281d50, transparent), radial-gradient(ellipse 62px 3px at 54% 50%, #3b281d70, transparent), radial-gradient(ellipse 39px 2px at 80% 50%, #3b281d50, transparent);
+  filter: blur(1.3px);
+}
+.library .shelf::after {
+  left: 5%; right: 5%;
+  background: radial-gradient(ellipse 48% 3px at 50% 50%, #31201670, transparent);
+}
+.shelf-shadow {
+  background: radial-gradient(ellipse, #6345292b, transparent 70%);
+  filter: blur(11px);
+}
+.shelf > span::before, .shelf > span::after { display: none; }
+.shelf-bracket {
+  display: block;
+  position: absolute;
+  width: 45px; height: 57px;
+  top: calc(100% - 1px);
+  left: 42px;
+  pointer-events: none;
+  filter: drop-shadow(4px 5px 2px #3c30262b);
+}
+.shelf-bracket.bracket-right { left: auto; right: 42px; }
+.photo-frame {
+  background-image: linear-gradient(133deg, #efd1a559, #4c332077 19%, transparent 28%, #e9c28a33 68%, #34251677 86%, #e7c18d40), url('assets/walnut-grain.svg');
+  background-size: 100% 100%;
+  border-color: #755034 #67452d #513822 #a77f50;
+  box-shadow: inset 1px 1px 0 #f1d2a799, inset -1px -2px 1px #3d281d99, inset 0 0 0 3px #b78e5659, inset 0 0 0 5px #4f352d66, inset 0 0 0 7px #e2ba784d, 5px 7px 10px #4a332430, 8px 12px 17px #4a33241c;
+  transform-origin: 50% 100%;
+  transform: perspective(650px) rotateX(9deg) rotateZ(-3deg);
+}
+.photo-frame::before {
+  content: '';
+  position: absolute;
+  bottom: -3px; left: 2%; right: -3%; height: 5px;
+  background: #32271a4d;
+  border-radius: 50%;
+  filter: blur(2px);
+  pointer-events: none;
+}
+.photo-frame::after {
+  inset: 18px;
+  border: 1px solid #fff4da66;
+  background: linear-gradient(118deg, transparent 9%, #fffdf62b 12%, #fffdf60d 31%, transparent 32%, transparent 53%, #fffdf61c 54%, #fffdf60a 60%, transparent 61%);
+  box-shadow: inset 1px 2px 3px #4d3a2633, inset -1px -1px 1px #fff8e333;
+}
+.photo-mat {
+  background-color: #f0e6ce;
+  background-image: linear-gradient(135deg, #fffdfd38, transparent 40%, #bca88113);
+  box-shadow: inset 0 1px 1px #fffbec, inset 1px 2px 3px #6c533530, 0 0 0 1px #543923;
+}
+.stained-glass {
+  position: relative;
+  isolation: isolate;
+  filter: drop-shadow(3px 4px 3px #45342129);
+}
+.glass-art {
+  display: block;
+  width: 100%; height: 100%;
+  object-fit: contain;
+  object-position: center bottom;
+  opacity: .97;
+  /* The original painted cames, lily motif, and coloured panes remain in the image. */
+  filter: contrast(1.1) brightness(1.035);
+}
+.stained-glass::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  inset: 10% -18% -10%;
+  background: radial-gradient(ellipse at 35% 48%, #e4ad4c42, transparent 49%), radial-gradient(ellipse at 64% 36%, #a3c4d234, transparent 43%), radial-gradient(ellipse at 53% 80%, #87916a33, transparent 54%);
+  filter: blur(9px);
+  transform: translate(5px, 5px);
+  pointer-events: none;
+}
+.stained-glass::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url('assets/glass-ripples.svg') center bottom / contain no-repeat;
+  opacity: .65;
+  mix-blend-mode: screen;
+  pointer-events: none;
+}
+@media (max-width: 767px) {
+  .site-name { font-size: clamp(36px, 10vw, 42px); }
+  .shelf-bracket { width: 34px; height: 43px; left: 25px; }
+  .shelf-bracket.bracket-right { right: 25px; }
+  .photo-frame::after { inset: 13px; }
+  .stained-glass::before { filter: blur(6px); }
+}
+
+
+/* Landscape photo frame: its level bottom rests on the plank's top surface. */
+.photo-frame {
+  flex-basis: 208px;
+  height: 165px;
+  margin-bottom: 6px;
+  transform-origin: 50% 100%;
+  transform: perspective(700px) rotateX(6deg);
+}
+.photo-frame::before {
+  bottom: -2px;
+  left: -2%; right: -2%;
+  height: 4px;
+  filter: blur(1.5px);
+}
+.photo-mat img { object-fit: contain; background: #e8dec6; }
+@media (max-width: 767px) {
+  .keepsake-objects { gap: 10px; padding-right: 3px; }
+  .photo-frame { flex-basis: 140px; height: 113px; padding: 7px; z-index: 5; }
+}
+@media (max-width: 359px) {
+  .keepsake-objects { gap: 8px; padding-right: 0; }
+  .photo-frame { flex-basis: 122px; height: 100px; }
+}
+
+/* Photographic walnut grain is cropped at its natural aspect, never flattened. */
+.shelf {
+  background-image: linear-gradient(#f0d0a52b, transparent 16%, #4e2f1819 70%, #3c271b59), url('assets/natural-walnut.webp');
+  background-size: 100% 100%, 920px auto;
+  background-position: center, center 51%;
+}
+.shelf::before {
+  background-image: linear-gradient(#efd6af66, #e0ba824d 68%, #fff0d080 97%), url('assets/natural-walnut.webp');
+  background-size: 100% 100%, 920px auto;
+  background-position: center, center 47%;
+}
+
+
+/* A freshly trimmed plant leaves the book titles clear. */
+.trailing-plant {
+  top: auto;
+  bottom: -19px;
+  width: 240px;
+  height: auto;
+  object-fit: contain;
+  object-position: center bottom;
+}
+#spine-about-me .spine-title { font-size: 21px; }
+@media (min-width: 768px) and (max-width: 1100px) {
+  .books { padding: 0; gap: 5px; }
+}
+@media (max-width: 767px) {
+  .trailing-plant { top: auto; bottom: -14px; width: 174px; height: auto; left: -28px; object-fit: contain; }
+  #spine-about-me .spine-title { font-size: 20px; }
+}

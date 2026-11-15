@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f3eddf">
+  <title>Lucy Maria Daly — A little shelf of my life</title>
+  <meta name="description" content="Explore Lucy Maria Daly's work, communities, university life, water, software and hardware projects, and arts and crafts through nine scrapbook books.">
+  <link rel="canonical" href="https://ldaly4.github.io/lucy-bookshelf/">
+  <meta property="og:url" content="https://ldaly4.github.io/lucy-bookshelf/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Lucy Maria Daly — A little shelf of my life">
+  <meta property="og:description" content="Nine books. A collection of projects, small adventures, and things I care about. Come have a look around.">
+  <meta property="og:image" content="https://ldaly4.github.io/lucy-bookshelf/assets/social-preview.png">
+  <meta name="twitter:image" content="https://ldaly4.github.io/lucy-bookshelf/assets/social-preview.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="room.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="details.css">
+  <script src="content.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#bookshelf">Skip to the books</a>
+  <header class="topbar"><h1 class="site-name">Lucy Maria Daly</h1></header>
+  <main id="home">
+    <section class="keepsake-shelf" aria-label="A shelf of keepsakes">
+      <div class="keepsake-objects">
+        <img class="trailing-plant" src="assets/trimmed-pothos.webp" alt="" width="700" height="631" decoding="async">
+        <div class="photo-frame">
+          <div id="shelf-photo" class="photo-mat"><div class="photo-placeholder" aria-hidden="true"></div><span class="sr-only">A frame ready for Lucy’s photograph.</span></div>
+        </div>
+        <div class="stained-glass" aria-hidden="true"><img class="glass-art" src="assets/stained-glass.webp" alt="" width="500" height="608" decoding="async"></div>
+      </div>
+      <div class="shelf" aria-hidden="true"><span></span><img class="shelf-bracket" src="assets/shelf-bracket.svg" alt="" width="52" height="65"><img class="shelf-bracket bracket-right" src="assets/shelf-bracket.svg" alt="" width="52" height="65"></div>
+      <div class="shelf-shadow" aria-hidden="true"></div>
+    </section>
+    <section class="library" aria-label="Nine books about my life">
+      <div class="shelf-scene">
+        <div id="bookshelf" class="books" tabindex="-1" aria-label="Choose a book"></div>
+        <div class="shelf" aria-hidden="true"><span></span><img class="shelf-bracket" src="assets/shelf-bracket.svg" alt="" width="52" height="65"><img class="shelf-bracket bracket-right" src="assets/shelf-bracket.svg" alt="" width="52" height="65"></div>
+        <div class="shelf-shadow" aria-hidden="true"></div>
+      </div>
+    </section>
+  </main>
+  <dialog id="reader" aria-labelledby="book-title"><div class="reader-shell"><div class="reader-toolbar"><button id="close-book" class="chunky close">← Back to shelf</button><button id="reader-sound" class="sound" aria-pressed="false" aria-label="Turn sounds on">♪ <span>sound off</span></button></div><div class="book-binding"><div id="spread" class="spread"></div><div id="turn-sheet" class="turn-sheet" aria-hidden="true" inert></div></div><nav class="page-controls" aria-label="Book pages"><button id="previous" class="chunky page-arrow" aria-label="Previous page">←</button><span id="position" role="status" aria-live="polite"></span><button id="next" class="chunky page-arrow" aria-label="Next page">→</button></nav><p class="reader-hint">Use the arrows, turn a corner, or swipe to explore.</p></div></dialog>
+  <p class="sr-only" id="announcement" role="status"></p>
+  <noscript><p class="noscript">Please enable JavaScript to open the scrapbook books. Lucy Maria Daly’s nine books cover Work History, University (and building cool cars), Communities, VapeBox, Water Projects, Software Projects, Hardware Projects, Arts and Crafts, and About me.</p></noscript>
+</body>
+</html>

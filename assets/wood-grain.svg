@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="85" viewBox="0 0 1200 85" preserveAspectRatio="none">
+<defs><filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".012 .21" numOctaves="3" seed="12"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope=".32"/></feComponentTransfer></filter><filter id="warp"><feTurbulence baseFrequency=".006 .04" numOctaves="2" seed="8"/><feDisplacementMap in="SourceGraphic" scale="9"/></filter><linearGradient id="wood" x2="0" y2="1"><stop stop-color="#af8255"/><stop offset=".2" stop-color="#987049"/><stop offset=".8" stop-color="#805739"/><stop offset="1" stop-color="#684731"/></linearGradient></defs>
+<path fill="url(#wood)" d="M0 0h1200v85H0z"/><path fill="#5c3821" filter="url(#grain)" opacity=".75" d="M0 0h1200v85H0z"/>
+<g fill="none" stroke="#563a24" stroke-width=".9" opacity=".3" filter="url(#warp)"><path d="M-10 14q115 5 220 0t230 2 260-2 230 4 300-1M-10 30q120-6 230-1t180 2 190-4 300 4 320-3M-10 52q160-8 290-2t250-1 260 3 430-3M-10 68q190 8 300 0t280 1 250-2 400 5"/><ellipse cx="243" cy="43" rx="73" ry="8"/><ellipse cx="243" cy="43" rx="47" ry="5"/><ellipse cx="243" cy="43" rx="18" ry="2"/><ellipse cx="895" cy="20" rx="38" ry="5"/></g>
+<path d="M12 5h137m289 2h64m300-1h126M50 76h210m744-1h108" stroke="#dcc097" stroke-width="1" opacity=".23"/>
+</svg>

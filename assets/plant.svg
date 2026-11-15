@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="200" viewBox="0 0 160 200">
+<defs><linearGradient id="pot"><stop stop-color="#995c43"/><stop offset=".48" stop-color="#c28b66"/><stop offset="1" stop-color="#92563f"/></linearGradient></defs>
+<g fill="none" stroke="#68774f" stroke-width="3" stroke-linecap="round"><path d="M80 143Q65 92 78 30M78 113Q40 98 27 54M80 99Q112 80 128 42M77 74Q51 60 49 21M82 138q48-26 58 17t-6 42"/></g>
+<g fill="#788661" stroke="#566c48" stroke-width=".7"><path d="M77 48Q60 28 76 12q16 20 1 36M76 78Q92 56 102 62q-2 20-26 16M72 104Q51 90 54 75q23 5 18 29M44 82Q19 84 17 64q24-1 27 18M30 61Q13 40 26 31q17 11 4 30M54 48Q36 43 34 28q19-1 20 20M96 85Q95 62 111 59q6 18-15 26M120 58Q115 37 134 28q6 20-14 30M104 126q4-20 20-18 0 20-20 18M132 141q-5-17 9-23 11 13-9 23M142 168q-15-11-7-23 17 6 7 23M136 192q-14-10-7-22 15 7 7 22"/></g>
+<path d="M48 143h64l-9 53q-23 6-46 0Z" fill="url(#pot)" stroke="#855239" stroke-width="1.5"/><path d="M45 139q35-7 70 0l-2 13q-33 4-66 0Z" fill="#b27b58" stroke="#88593e" stroke-width="1.5"/><path d="M53 142q27-4 53 0M61 163l5 24" fill="none" stroke="#e4b991" opacity=".45" stroke-width="2"/>
+</svg>
