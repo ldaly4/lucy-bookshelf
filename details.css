@@ -169,3 +169,11 @@
   .trailing-plant { top: auto; bottom: -14px; width: 174px; height: auto; left: -28px; object-fit: contain; }
   #spine-about-me .spine-title { font-size: 20px; }
 }
+
+/* The homepage is just two equally wide shelves. */
+#home { padding-top: 70px; }
+.keepsake-shelf { width: min(926px, calc(100% - 84px)); }
+@media (max-width: 767px) {
+  #home { padding-top: 36px; }
+  .keepsake-shelf { width: min(432px, calc(100% - 58px)); }
+}
